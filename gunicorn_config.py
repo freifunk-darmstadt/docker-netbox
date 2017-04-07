@@ -1,4 +1,4 @@
-command = '/usr/bin/gunicorn'
+command = '/usr/local/bin/gunicorn'
 pythonpath = '/opt/netbox/netbox'
 bind = '0.0.0.0:8001'
 workers = 3
