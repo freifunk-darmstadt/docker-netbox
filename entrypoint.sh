@@ -8,10 +8,10 @@ done
 
 # create superuser silently
 if [[ -z ${SUPERUSER_NAME} || -z ${SUPERUSER_EMAIL} || -z ${SUPERUSER_PASSWORD} ]]; then
-        SUPERUSER_NAME='admin'
-        SUPERUSER_EMAIL='admin@example.com'
-        SUPERUSER_PASSWORD='admin'
-        echo "Using defaults: Username: ${SUPERUSER_NAME}, E-Mail: ${SUPERUSER_EMAIL}, Password: ${SUPERUSER_PASSWORD}"
+    SUPERUSER_NAME='admin'
+    SUPERUSER_EMAIL='admin@example.com'
+    SUPERUSER_PASSWORD='admin'
+    echo "Using defaults: Username: ${SUPERUSER_NAME}, E-Mail: ${SUPERUSER_EMAIL}, Password: ${SUPERUSER_PASSWORD}"
 fi
 
 python /opt/netbox/netbox/manage.py shell --plain << END
