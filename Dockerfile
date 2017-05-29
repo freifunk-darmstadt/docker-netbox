@@ -6,7 +6,7 @@ ARG BRANCH=v2.0.4
 ARG URL=https://github.com/digitalocean/netbox.git
 RUN git clone --depth 1 $URL -b $BRANCH . && \
     apt-get update -qq && apt-get install -y libldap2-dev libsasl2-dev libssl-dev graphviz && \
-    pip install gunicorn pyldap==2.4.28 django-auth-ldap && \
+    pip install gunicorn pyldap==2.4.35.1 django-auth-ldap && \
     pip install -r requirements.txt
 
 ADD entrypoint.sh /entrypoint.sh
