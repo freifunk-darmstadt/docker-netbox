@@ -2,7 +2,7 @@ FROM python:3.6
 
 WORKDIR /opt/netbox
 
-ARG BRANCH=v2.2.10
+ARG BRANCH=v2.3.0
 ARG URL=https://github.com/digitalocean/netbox.git
 RUN git clone --depth 1 $URL -b $BRANCH . && \
     apt-get update -qq && apt-get install -y libldap2-dev libsasl2-dev libssl-dev graphviz && \
